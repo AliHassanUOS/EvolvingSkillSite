@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{daf6f6ab-d18d-4748-b483-463e0d52dda9}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId />
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <DjangoSettingsModule>videoservice.settings</DjangoSettingsModule>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="home\admin.py" />
+    <Compile Include="home\apps.py" />
+    <Compile Include="home\migrations\0001_initial.py" />
+    <Compile Include="home\migrations\0002_auto_20210107_2110.py" />
+    <Compile Include="home\migrations\0003_auto_20210107_2112.py" />
+    <Compile Include="home\migrations\0004_auto_20210515_1257.py" />
+    <Compile Include="home\migrations\0005_alter_course_book_price.py" />
+    <Compile Include="home\migrations\__init__.py" />
+    <Compile Include="home\models.py" />
+    <Compile Include="home\tests.py" />
+    <Compile Include="home\urls.py" />
+    <Compile Include="home\views.py" />
+    <Compile Include="home\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="videoservice\settings.py" />
+    <Compile Include="videoservice\urls.py" />
+    <Compile Include="videoservice\wsgi.py" />
+    <Compile Include="videoservice\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home\templates\base.html" />
+    <Content Include="home\templates\become_pro.html" />
+    <Content Include="home\templates\card.html" />
+    <Content Include="home\templates\charge.html" />
+    <Content Include="home\templates\course.html" />
+    <Content Include="home\templates\home.html" />
+    <Content Include="home\templates\login.html" />
+    <Content Include="home\templates\register.html" />
+    <Content Include="public\static\course\028c1064fca1a89413a183c7d255b7e4.jpg" />
+    <Content Include="public\static\course\1251656_23e6_4-750x405.jpg" />
+    <Content Include="public\static\course\1411694_0862.jpg" />
+    <Content Include="public\static\course\american-1209605_1920.jpg" />
+    <Content Include="public\static\course\book12.jpg" />
+    <Content Include="public\static\course\book3.jpg" />
+    <Content Include="public\static\course\Django-2-React-Build-A-Realtime-Web-App.jpg" />
+    <Content Include="public\static\course\download.jpg" />
+    <Content Include="public\static\course\download_1.jpg" />
+    <Content Include="public\static\course\download_6.jpg" />
+    <Content Include="public\static\course\download_6_3igWzZx.jpg" />
+    <Content Include="public\static\course\download_6_EODQpTV.jpg" />
+    <Content Include="public\static\course\download_6_I3Ouqzw.jpg" />
+    <Content Include="public\static\course\download_6_LCZtD6v.jpg" />
+    <Content Include="public\static\course\download_6_pNBRWgZ.jpg" />
+    <Content Include="public\static\course\download_6_wEi8uPR.jpg" />
+    <Content Include="public\static\course\expense-tracker-django.png" />
+    <Content Include="public\static\course\girl-2771936_1920.jpg" />
+    <Content Include="public\static\course\notes7.jpg" />
+    <Content Include="public\static\course\notes8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="home" />
+    <Folder Include="home\migrations" />
+    <Folder Include="home\templates" />
+    <Folder Include="public\" />
+    <Folder Include="public\static\" />
+    <Folder Include="public\static\course" />
+    <Folder Include="videoservice" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

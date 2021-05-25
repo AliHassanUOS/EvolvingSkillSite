@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block start %}
+
+<div class="container">
+    <img src="/media/{{course.course_image}}" class="card-img-top p-5 img-fluid img-centered img-responsive" style="height:300px;width:400px">
+
+    <h4> Course Name: {{course.course_name}}</h4>
+
+    <h4>  {{course.course_description | safe}}</h4>
+    <hr>
+     <h4>Author Name: {{course.Book_author_name }}</h4>
+      <hr>
+     <h4> Book Price :{{course.Book_price}}</h4>
+
+    
+
+        {% for course_module in course_modules %}
+    <div class="accordion" id="accordion-{{forloop.counter}}">
+
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" 
+              data-target="#collapse-{{forloop.counter}}" aria-expanded="true" aria-controls="collapseOne">
+               {{course_module.course_module_name}} 
+               {% if course_module.can_view %}
+               <span class="badge badge-success">Can Watch</span>
+               {% else %}
+               <span class="badge badge-info">Become pro to watch</span>
+                {% endif %}
+
+
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapse-{{forloop.counter}}" class="collapse show" 
+          aria-labelledby="headingOne" data-parent="#accordion-{{forloop.counter}}">
+            <div class="card-body">
+                {{course_module.course_description|safe}}
+                {% if course_module.can_view %}
+                <div class="embed-responsive embed-responsive-16by9" >
+                {% comment %} style="height:200px;width:300px" {% endcomment %}
+                    <iframe class="embed-responsive-item" src="{{course_module.video_url}}" ></iframe>
+                  </div>
+                  {% endif %}
+            </div>
+          </div>
+        </div>
+    </div>
+
+        {% endfor %}
+
+
+</div>
+
+
+
+{% endblock %}
